@@ -1,0 +1,4 @@
+# eslint 忽略文件
+/dist/*
+/node_modules/*
+/bower_components/*

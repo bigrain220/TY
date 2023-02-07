@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" class="p-0 m-0" style="margin-top:60px;">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no">
+  <meta name="renderer" content="webkit">
+  <title>图表样式统一管理</title>
+  <link rel="shortcut icon" href="<%= htmlWebpackPlugin.options.baseURL %>/static/ico/favicon.ico">
+  <link href="<%= htmlWebpackPlugin.options.baseURL %>/static/css/style.min.css" rel="stylesheet" type="text/css">
+  <script>
+    let baseURL = '<%= htmlWebpackPlugin.options.baseURL %>'
+    // 兼容IE
+    if ('ActiveXObject' in window) {
+      let es6 = document.createElement('script')
+      es6.src = baseURL + '/static/js/es6-shim.min.js'
+      es6.type = 'text/javascript'
+      document.getElementsByTagName('head')[0].appendChild(es6)
+    }
+  </script>
+</head>
+
+<body class="p-0 m-0">
+  <div id="app"></div>
+</body>
+
+</html>

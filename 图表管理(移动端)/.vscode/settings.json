@@ -1,0 +1,59 @@
+{
+    "editor.formatOnSave": false, // 保存文件不自动格式话, 避免重复格式话
+    "editor.codeActionsOnSave": {
+        // For ESLint
+        "source.fixAll.eslint": true
+        // For TSLint
+        // "source.fixAll.tslint": true,
+        // For Stylelint
+        // "source.fixAll.stylelint": true
+    },
+    "[html]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "[javascript]": {
+        "editor.formatOnSave": true,
+        // "editor.defaultFormatter": "HookyQR.beautify"
+        "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    },
+    "[css]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "michelemelluso.code-beautifier"
+    },
+    "[less]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "michelemelluso.code-beautifier"
+    },
+    "[scss]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "michelemelluso.code-beautifier"
+    },
+    "[json]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    /* vue 文件的格式话 */
+    "[vue]": {
+        "editor.defaultFormatter": "octref.vetur"
+    },
+    "vetur.format.defaultFormatter.js": "vscode-typescript",
+    "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
+    "vetur.format.defaultFormatter.html": "js-beautify-html",
+    "vetur.format.defaultFormatterOptions": {
+        "js-beautify-html": {
+            "wrap_line_length": 160,
+            "wrap_attributes": "auto",
+            "end_with_newline": false
+        }
+    },
+    /* eslint */
+    "eslint.format.enable": true,
+    "eslint.validate": [
+        "javascript",
+        "vue",
+        "html"
+    ],
+    "vetur.ignoreProjectWarning": true,
+    "git.ignoreWindowsGit27Warning": true
+}
